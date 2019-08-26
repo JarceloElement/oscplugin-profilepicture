@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-16 10:45+0200\n"
+"PO-Revision-Date: 2019-08-16 10:46+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+
+#: classes/ProfilePic.php:102
+msgid "Picture uploaded. Click to upload a new one."
+msgstr "Picture uploaded. Click to upload a new one."
+
+#: classes/ProfilePic.php:103
+msgid "Choose a profile picture."
+msgstr "Choose a profile picture."
+
+#: classes/ProfilePic.php:161
+msgid "Profile Picture"
+msgstr "Profile Picture"
+
+#: classes/ProfilePic.php:162 views/admin/header.php:33
+#: views/admin/settings.php:17
+msgid "Settings"
+msgstr "Settings"
+
+#: classes/ProfilePic.php:163 views/admin/header.php:30 views/admin/help.php:11
+msgid "Help"
+msgstr "Help"
+
+#: classes/ProfilePic.php:173
+msgid "Profile pic"
+msgstr "Profile pic"
+
+#: classes/controllers/Admin.php:34
+msgid "Setting(s) saved successfully."
+msgstr "Setting(s) saved successfully."
+
+#: views/admin/header.php:36
+msgid "Osclass Community"
+msgstr "Osclass Community"
+
+#: views/admin/header.php:39
+msgid "WEBmods"
+msgstr "WEBmods"
+
+#: views/admin/settings.php:21
+msgid "Size"
+msgstr "Size"
+
+#: views/admin/settings.php:23
+msgid "Size of the profile picture in pixels (image ratio is 1:1)."
+msgstr "Size of the profile picture in pixels (image ratio is 1:1)."
+
+#: views/admin/settings.php:26
+msgid "Quality"
+msgstr "Quality"
+
+#: views/admin/settings.php:28
+msgid "Image quality from 0 to 100. Bigger quality = bigger file size."
+msgstr "Image quality from 0 to 100. Bigger quality = bigger file size."
+
+#: views/admin/settings.php:31
+msgid "Default profile picture"
+msgstr "Default profile picture"
+
+#: views/admin/settings.php:35
+msgid "Current picture"
+msgstr "Current picture"
+
+#: views/admin/settings.php:42 views/web/user-dashboard.php:23
+#: views/web/user-register.php:17
+msgid "Choose a profile picture"
+msgstr "Choose a profile picture"
+
+#: views/admin/settings.php:49
+msgid "Save"
+msgstr "Save"
+
+#: views/web/modal.php:14
+msgid "Edit the profile picture"
+msgstr "Edit the profile picture"
+
+#: views/web/modal.php:15
+msgid "Close"
+msgstr "Close"
+
+#: views/web/modal.php:26
+msgid "Zoom in"
+msgstr "Zoom in"
+
+#: views/web/modal.php:31
+msgid "Zoom out"
+msgstr "Zoom out"
+
+#: views/web/modal.php:36
+msgid "Rotate left (-45deg)"
+msgstr "Rotate left (-45deg)"
+
+#: views/web/modal.php:41
+msgid "Rotate right (45deg)"
+msgstr "Rotate right (45deg)"
+
+#: views/web/modal.php:47
+msgid "Cancel"
+msgstr "Cancel"
+
+#: views/web/modal.php:48
+msgid "Crop"
+msgstr "Crop"
+
+#: views/web/user-dashboard.php:10
+msgid "Current profile picture"
+msgstr "Current profile picture"
+
+#: views/web/user-dashboard.php:16
+msgid "Add a new profile picture"
+msgstr "Add a new profile picture"
+
+#: views/web/user-register.php:10
+msgid "Profile picture"
+msgstr "Profile picture"

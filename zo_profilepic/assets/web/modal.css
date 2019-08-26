@@ -1,0 +1,585 @@
+.pp_upload [role=button] {
+  cursor: pointer;
+}
+.pp_upload .modal-open {
+  overflow: hidden;
+}
+.pp_upload .modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.pp_upload .modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.pp_upload .modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.pp_upload .modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.pp_upload .modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.pp_upload .modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  outline: 0;
+}
+.pp_upload .modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+}
+.pp_upload .modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.pp_upload .modal-backdrop.in {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.pp_upload .modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 16.42857143px;
+}
+.pp_upload .modal-header .close {
+  margin-top: -2px;
+}
+.pp_upload .modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.pp_upload .modal-body {
+  position: relative;
+  padding: 15px;
+}
+.pp_upload .modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.pp_upload .modal-footer .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.pp_upload .modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.pp_upload .modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.pp_upload .modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+.pp_upload .close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: 0.2;
+}
+.pp_upload button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+.pp_upload .close:hover, .pp_upload .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+@media (min-width: 768px) {
+  .pp_upload .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .pp_upload .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .pp_upload .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .pp_upload .modal-lg {
+    width: 900px;
+  }
+}
+.pp_upload [role=button] {
+  cursor: pointer;
+}
+.pp_upload .btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.pp_upload .btn:focus,
+.pp_upload .btn:active:focus,
+.pp_upload .btn.active:focus,
+.pp_upload .btn.focus,
+.pp_upload .btn:active.focus,
+.pp_upload .btn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.pp_upload .btn:hover,
+.pp_upload .btn:focus,
+.pp_upload .btn.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.pp_upload .btn:active,
+.pp_upload .btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.pp_upload .btn.disabled,
+.pp_upload .btn[disabled],
+.pp_upload fieldset[disabled] .btn {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.pp_upload .btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.pp_upload .btn-default:hover,
+.pp_upload .btn-default:focus,
+.pp_upload .btn-default.focus,
+.pp_upload .btn-default:active,
+.pp_upload .btn-default.active,
+.pp_upload .open > .dropdown-toggle.btn-default {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.pp_upload .btn-default:active,
+.pp_upload .btn-default.active,
+.pp_upload .open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.pp_upload .btn-default.disabled,
+.pp_upload .btn-default[disabled],
+.pp_upload fieldset[disabled] .btn-default,
+.pp_upload .btn-default.disabled:hover,
+.pp_upload .btn-default[disabled]:hover,
+.pp_upload fieldset[disabled] .btn-default:hover,
+.pp_upload .btn-default.disabled:focus,
+.pp_upload .btn-default[disabled]:focus,
+.pp_upload fieldset[disabled] .btn-default:focus,
+.pp_upload .btn-default.disabled.focus,
+.pp_upload .btn-default[disabled].focus,
+.pp_upload fieldset[disabled] .btn-default.focus,
+.pp_upload .btn-default.disabled:active,
+.pp_upload .btn-default[disabled]:active,
+.pp_upload fieldset[disabled] .btn-default:active,
+.pp_upload .btn-default.disabled.active,
+.pp_upload .btn-default[disabled].active,
+.pp_upload fieldset[disabled] .btn-default.active {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.pp_upload .btn-default .badge {
+  color: #ffffff;
+  background-color: #333333;
+}
+.pp_upload .btn-primary {
+  color: #ffffff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.pp_upload .btn-primary:hover,
+.pp_upload .btn-primary:focus,
+.pp_upload .btn-primary.focus,
+.pp_upload .btn-primary:active,
+.pp_upload .btn-primary.active,
+.pp_upload .open > .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.pp_upload .btn-primary:active,
+.pp_upload .btn-primary.active,
+.pp_upload .open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.pp_upload .btn-primary.disabled,
+.pp_upload .btn-primary[disabled],
+.pp_upload fieldset[disabled] .btn-primary,
+.pp_upload .btn-primary.disabled:hover,
+.pp_upload .btn-primary[disabled]:hover,
+.pp_upload fieldset[disabled] .btn-primary:hover,
+.pp_upload .btn-primary.disabled:focus,
+.pp_upload .btn-primary[disabled]:focus,
+.pp_upload fieldset[disabled] .btn-primary:focus,
+.pp_upload .btn-primary.disabled.focus,
+.pp_upload .btn-primary[disabled].focus,
+.pp_upload fieldset[disabled] .btn-primary.focus,
+.pp_upload .btn-primary.disabled:active,
+.pp_upload .btn-primary[disabled]:active,
+.pp_upload fieldset[disabled] .btn-primary:active,
+.pp_upload .btn-primary.disabled.active,
+.pp_upload .btn-primary[disabled].active,
+.pp_upload fieldset[disabled] .btn-primary.active {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.pp_upload .btn-primary .badge {
+  color: #337ab7;
+  background-color: #ffffff;
+}
+.pp_upload .btn-success {
+  color: #ffffff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.pp_upload .btn-success:hover,
+.pp_upload .btn-success:focus,
+.pp_upload .btn-success.focus,
+.pp_upload .btn-success:active,
+.pp_upload .btn-success.active,
+.pp_upload .open > .dropdown-toggle.btn-success {
+  color: #ffffff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.pp_upload .btn-success:active,
+.pp_upload .btn-success.active,
+.pp_upload .open > .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.pp_upload .btn-success.disabled,
+.pp_upload .btn-success[disabled],
+.pp_upload fieldset[disabled] .btn-success,
+.pp_upload .btn-success.disabled:hover,
+.pp_upload .btn-success[disabled]:hover,
+.pp_upload fieldset[disabled] .btn-success:hover,
+.pp_upload .btn-success.disabled:focus,
+.pp_upload .btn-success[disabled]:focus,
+.pp_upload fieldset[disabled] .btn-success:focus,
+.pp_upload .btn-success.disabled.focus,
+.pp_upload .btn-success[disabled].focus,
+.pp_upload fieldset[disabled] .btn-success.focus,
+.pp_upload .btn-success.disabled:active,
+.pp_upload .btn-success[disabled]:active,
+.pp_upload fieldset[disabled] .btn-success:active,
+.pp_upload .btn-success.disabled.active,
+.pp_upload .btn-success[disabled].active,
+.pp_upload fieldset[disabled] .btn-success.active {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.pp_upload .btn-success .badge {
+  color: #5cb85c;
+  background-color: #ffffff;
+}
+.pp_upload .btn-info {
+  color: #ffffff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.pp_upload .btn-info:hover,
+.pp_upload .btn-info:focus,
+.pp_upload .btn-info.focus,
+.pp_upload .btn-info:active,
+.pp_upload .btn-info.active,
+.pp_upload .open > .dropdown-toggle.btn-info {
+  color: #ffffff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.pp_upload .btn-info:active,
+.pp_upload .btn-info.active,
+.pp_upload .open > .dropdown-toggle.btn-info {
+  background-image: none;
+}
+.pp_upload .btn-info.disabled,
+.pp_upload .btn-info[disabled],
+.pp_upload fieldset[disabled] .btn-info,
+.pp_upload .btn-info.disabled:hover,
+.pp_upload .btn-info[disabled]:hover,
+.pp_upload fieldset[disabled] .btn-info:hover,
+.pp_upload .btn-info.disabled:focus,
+.pp_upload .btn-info[disabled]:focus,
+.pp_upload fieldset[disabled] .btn-info:focus,
+.pp_upload .btn-info.disabled.focus,
+.pp_upload .btn-info[disabled].focus,
+.pp_upload fieldset[disabled] .btn-info.focus,
+.pp_upload .btn-info.disabled:active,
+.pp_upload .btn-info[disabled]:active,
+.pp_upload fieldset[disabled] .btn-info:active,
+.pp_upload .btn-info.disabled.active,
+.pp_upload .btn-info[disabled].active,
+.pp_upload fieldset[disabled] .btn-info.active {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.pp_upload .btn-info .badge {
+  color: #5bc0de;
+  background-color: #ffffff;
+}
+.pp_upload .btn-warning {
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.pp_upload .btn-warning:hover,
+.pp_upload .btn-warning:focus,
+.pp_upload .btn-warning.focus,
+.pp_upload .btn-warning:active,
+.pp_upload .btn-warning.active,
+.pp_upload .open > .dropdown-toggle.btn-warning {
+  color: #ffffff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.pp_upload .btn-warning:active,
+.pp_upload .btn-warning.active,
+.pp_upload .open > .dropdown-toggle.btn-warning {
+  background-image: none;
+}
+.pp_upload .btn-warning.disabled,
+.pp_upload .btn-warning[disabled],
+.pp_upload fieldset[disabled] .btn-warning,
+.pp_upload .btn-warning.disabled:hover,
+.pp_upload .btn-warning[disabled]:hover,
+.pp_upload fieldset[disabled] .btn-warning:hover,
+.pp_upload .btn-warning.disabled:focus,
+.pp_upload .btn-warning[disabled]:focus,
+.pp_upload fieldset[disabled] .btn-warning:focus,
+.pp_upload .btn-warning.disabled.focus,
+.pp_upload .btn-warning[disabled].focus,
+.pp_upload fieldset[disabled] .btn-warning.focus,
+.pp_upload .btn-warning.disabled:active,
+.pp_upload .btn-warning[disabled]:active,
+.pp_upload fieldset[disabled] .btn-warning:active,
+.pp_upload .btn-warning.disabled.active,
+.pp_upload .btn-warning[disabled].active,
+.pp_upload fieldset[disabled] .btn-warning.active {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.pp_upload .btn-warning .badge {
+  color: #f0ad4e;
+  background-color: #ffffff;
+}
+.pp_upload .btn-danger {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.pp_upload .btn-danger:hover,
+.pp_upload .btn-danger:focus,
+.pp_upload .btn-danger.focus,
+.pp_upload .btn-danger:active,
+.pp_upload .btn-danger.active,
+.pp_upload .open > .dropdown-toggle.btn-danger {
+  color: #ffffff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.pp_upload .btn-danger:active,
+.pp_upload .btn-danger.active,
+.pp_upload .open > .dropdown-toggle.btn-danger {
+  background-image: none;
+}
+.pp_upload .btn-danger.disabled,
+.pp_upload .btn-danger[disabled],
+.pp_upload fieldset[disabled] .btn-danger,
+.pp_upload .btn-danger.disabled:hover,
+.pp_upload .btn-danger[disabled]:hover,
+.pp_upload fieldset[disabled] .btn-danger:hover,
+.pp_upload .btn-danger.disabled:focus,
+.pp_upload .btn-danger[disabled]:focus,
+.pp_upload fieldset[disabled] .btn-danger:focus,
+.pp_upload .btn-danger.disabled.focus,
+.pp_upload .btn-danger[disabled].focus,
+.pp_upload fieldset[disabled] .btn-danger.focus,
+.pp_upload .btn-danger.disabled:active,
+.pp_upload .btn-danger[disabled]:active,
+.pp_upload fieldset[disabled] .btn-danger:active,
+.pp_upload .btn-danger.disabled.active,
+.pp_upload .btn-danger[disabled].active,
+.pp_upload fieldset[disabled] .btn-danger.active {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.pp_upload .btn-danger .badge {
+  color: #d9534f;
+  background-color: #ffffff;
+}
+.pp_upload .btn-link {
+  color: #337ab7;
+  font-weight: normal;
+  border-radius: 0;
+}
+.pp_upload .btn-link,
+.pp_upload .btn-link:active,
+.pp_upload .btn-link.active,
+.pp_upload .btn-link[disabled],
+.pp_upload fieldset[disabled] .btn-link {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.pp_upload .btn-link,
+.pp_upload .btn-link:hover,
+.pp_upload .btn-link:focus,
+.pp_upload .btn-link:active {
+  border-color: transparent;
+}
+.pp_upload .btn-link:hover,
+.pp_upload .btn-link:focus {
+  color: #23527c;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.pp_upload .btn-link[disabled]:hover,
+.pp_upload fieldset[disabled] .btn-link:hover,
+.pp_upload .btn-link[disabled]:focus,
+.pp_upload fieldset[disabled] .btn-link:focus {
+  color: #777777;
+  text-decoration: none;
+}
+.pp_upload .btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.pp_upload .btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.pp_upload .btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.pp_upload .btn-block {
+  display: block;
+  width: 100%;
+}
+.pp_upload .btn-block + .btn-block {
+  margin-top: 5px;
+}
+.pp_upload input[type=submit].btn-block,
+.pp_upload input[type=reset].btn-block,
+.pp_upload input[type=button].btn-block {
+  width: 100%;
+}
+.pp_upload .clearfix:before,
+.pp_upload .clearfix:after,
+.pp_upload .modal-footer:before,
+.pp_upload .modal-footer:after {
+  content: " ";
+  display: table;
+}
+.pp_upload .clearfix:after,
+.pp_upload .modal-footer:after {
+  clear: both;
+}
+.pp_upload .center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pp_upload .pull-right {
+  float: right !important;
+}
+.pp_upload .pull-left {
+  float: left !important;
+}
+.pp_upload .hide {
+  display: none !important;
+}
+.pp_upload .show {
+  display: block !important;
+}
+.pp_upload .invisible {
+  visibility: hidden;
+}
+.pp_upload .text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.pp_upload .hidden {
+  display: none !important;
+}
+.pp_upload .affix {
+  position: fixed;
+}

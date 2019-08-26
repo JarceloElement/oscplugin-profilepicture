@@ -1,0 +1,67 @@
+.pp_upload .label {
+  cursor: pointer;
+}
+
+.pp_upload .progress {
+  display: none;
+  margin-bottom: 1rem;
+}
+
+.pp_upload .alert {
+  display: none;
+}
+
+.pp_upload .img-container img {
+  max-width: 100%;
+}
+
+.pp_input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.pp_input + label {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    color: #fff;
+    background-color: #d3394c;
+}
+
+.pp_input:focus + label,
+.pp_input.has-focus + label,
+.pp_input + label:hover {
+    background-color: #722040;
+}
+
+.pp_input + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.pp_button {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    color: #fff;
+    background-color: #d3394c;
+}
+
+.pp_button:focus + label,
+.pp_button:hover {
+    background-color: #722040;
+}

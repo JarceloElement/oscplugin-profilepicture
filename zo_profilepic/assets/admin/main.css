@@ -1,0 +1,128 @@
+/* Developed by WEBmods
+ * Zagorski oglasnik j.d.o.o. za usluge | www.zagorski-oglasnik.com
+ *
+ * License: GPL-3.0-or-later
+ * More info in license.txt
+*/
+
+.navbar {
+    display: block !important;
+}
+
+#flashmessage {
+    margin-bottom: 10px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#content-head {
+    padding: 0;
+    height: 88px;
+}
+
+.wm-topbar {
+    background-color: #212529;
+    padding: 0;
+}
+
+.wm-topbar .container .row {
+    margin:-7px;
+    padding:0;
+}
+
+.wm-topbar .container .row .col-md-12 {
+    padding:0;
+}
+
+.wm-topbar p {
+    margin:0;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+
+.wm-topbar p > i {
+    margin-right:5px;
+}
+
+.wm-topbar p:last-child {
+    text-align:right;
+}
+
+.wm-navbar {
+    margin-bottom: 0;
+}
+
+.wm-topbar li.wm-topbar {
+    display: inline;
+    padding-right: 18px;
+    line-height: 52px;
+    transition: all .3s linear;
+}
+
+.wm-topbar a {
+    color: #3bc492;
+}
+
+.wm-navbar a {
+  color: #0a0a0a;
+}
+
+.wm-navbar li {
+    list-style-type: none;
+}
+
+.wm-background {
+    background: -webkit-linear-gradient(45deg, #3bc492 48%, #1b1e21 48%);
+    background: -webkit-linear-gradient(left, #3bc492 48%, #1b1e21 48%);
+    background: linear-gradient(45deg, #3bc492 48%, #1b1e21 48%);
+}
+
+.wm-container {
+    background: #bababa24;
+    border-radius: 0.25rem;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.wm-container h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: initial;
+    background: #3bc492;
+    color: #fff;
+    margin: -15px -15px 15px -15px;
+    padding: 10px;
+    border-radius: 0.125rem;
+}
+
+.loveosclass-footer {
+    position: absolute;
+    bottom: 0;
+}
+
+a.btn {
+    height: auto !important;
+}
+
+.btn-primary {
+    background-color: #3bc492;
+    border-color: #3bc492;
+}
+
+.btn-primary:hover {
+    background-color: #48ad88;
+    border-color: #48ad88;
+}
+
+.btn-group {
+    display: block;
+}
+
+.btn-group .btn {
+    height: initial;
+    margin-right: 0;
+}
