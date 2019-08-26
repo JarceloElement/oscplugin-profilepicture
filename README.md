@@ -9,7 +9,7 @@ Profile pictures are shown in the users' table in administration.
 
 ### INSTALLATION
 Two options:
-- a) Download zip GitHub - click on "Clone or Downlaod" - "Download zip" - open file - upload "zo_profilepic" to oc-content/plugins.
+- a) Download zip from GitHub - click on releases tab - download latest zip - import in oc-admin.
 - b) Download zip from Market - https://market.osclasscommunity.com/index.php?page=item&id=21 - import in oc-admin.
 
 ### HELP
