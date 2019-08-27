@@ -182,34 +182,5 @@ class ProfilePicAdmin {
 
         return $row;
     }
-
-    public function loadJSON($url) {
-        if (ini_get('allow_url_fopen') == true) {
-            return $this->loadJSONfgc($url);
-        } else if (function_exists('curl_init')) {
-            return $this->loadJSONcurl($url);
-        } else {
-            return $this->loadJSONlocal();
-        }
-    }
-
-    private function loadJSONfgc($url) {
-        return file_get_contents($url);
-    }
-
-    private function loadJSONcurl($url) {
-        $curl = curl_init($url);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-        $result = curl_exec($curl);
-        curl_close($curl);
-        return $result;
-    }
-
-    private function loadJSONlocal() {
-        ob_start();
-        include PROFILEPIC_PATH.'assets/admin/plugins.json';
-        $result = ob_get_clean();
-        return $result;
-    }
 }
 $ProfilePicAdmin = new ProfilePicAdmin();
