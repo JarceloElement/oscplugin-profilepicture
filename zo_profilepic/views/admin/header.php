@@ -33,10 +33,10 @@ if(!defined('ABS_PATH')) exit('ABS_PATH is not loaded. Direct access is not allo
                     <a class="nav-link" href="<?php echo osc_route_admin_url('profilepic-settings'); ?>"><?php _e('Settings', profilepic_plugin()); ?></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="//osclasscommunity.com" target="_blank"><?php _e('Osclass Community', usercf_plugin()); ?></a>
+                    <a class="nav-link" href="//osclasscommunity.com" target="_blank"><?php _e('Osclass Community', profilepic_plugin()); ?></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="//wmods.zagorski-oglasnik.com" target="_blank"><?php _e('WEBmods', usercf_plugin()); ?></a>
+                    <a class="nav-link" href="//wmods.zagorski-oglasnik.com" target="_blank"><?php _e('WEBmods', profilepic_plugin()); ?></a>
                 </li>
           </ul>
       </div>
