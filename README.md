@@ -21,7 +21,7 @@ Check the help page for documentation on helpers (for showing profile picture).
 .pot translation template is provided. Translate using POedit or similar software.
 
 ### SCREENSHOTS
-![Register Page](https://raw.githubusercontent.com/webmods-croatia/oscplugin-videoembed/master/register%20page.jpg)
-![Dashboard Page](https://raw.githubusercontent.com/webmods-croatia/oscplugin-videoembed/master/dashboard%20page.jpg)
-![Cropper](https://raw.githubusercontent.com/webmods-croatia/oscplugin-videoembed/master/cropper.jpg)
-![Admin settings](https://raw.githubusercontent.com/webmods-croatia/oscplugin-videoembed/master/admin%20settings.jpg)
+![Register Page](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/register%20page.jpg)
+![Dashboard Page](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/dashboard%20page.jpg)
+![Cropper](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/cropper.jpg)
+![Admin settings](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/admin%20settings.jpg)
