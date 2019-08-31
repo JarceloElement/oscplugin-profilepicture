@@ -1,5 +1,7 @@
 # Osclass Profile Picture plugin
 
+![Profile Picture Cover Image](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/cover.jpg)
+
 ### OVERVIEW
 With this plugin, your users can add profile pictures either on registration or their dashboard.
 Profile pictures can be cropped, rotated and resized using cropper.js.
@@ -17,3 +19,9 @@ Check the help page for documentation on helpers (for showing profile picture).
 
 ### TRANSLATION
 .pot translation template is provided. Translate using POedit or similar software.
+
+### SCREENSHOTS
+![Register Page](https://raw.githubusercontent.com/webmods-croatia/oscplugin-videoembed/master/register%20page.jpg)
+![Dashboard Page](https://raw.githubusercontent.com/webmods-croatia/oscplugin-videoembed/master/dashboard%20page.jpg)
+![Cropper](https://raw.githubusercontent.com/webmods-croatia/oscplugin-videoembed/master/cropper.jpg)
+![Admin settings](https://raw.githubusercontent.com/webmods-croatia/oscplugin-videoembed/master/admin%20settings.jpg)
