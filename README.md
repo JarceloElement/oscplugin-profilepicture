@@ -24,4 +24,4 @@ Check the help page for documentation on helpers (for showing profile picture).
 ![Register Page](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/register%20page.jpg)
 ![Dashboard Page](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/dashboard%20page.jpg)
 ![Cropper](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/cropper.jpg)
-![Admin settings](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/admin%20settings.jpg)
+![Admin settings](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/admin%20page.jpg)
