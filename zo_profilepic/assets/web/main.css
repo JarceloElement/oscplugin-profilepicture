@@ -30,7 +30,7 @@
     cursor: pointer;
     display: inline-block;
     overflow: hidden;
-    padding: 0.625rem 1.25rem;
+    padding: 5px 15px;
     color: #fff;
     background-color: #d3394c;
 }
