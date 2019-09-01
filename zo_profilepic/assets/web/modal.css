@@ -39,6 +39,7 @@
   position: relative;
   width: auto;
   margin: 10px;
+  overflow-y: initial !important
 }
 .pp_upload .modal-content {
   position: relative;
@@ -84,6 +85,9 @@
 .pp_upload .modal-body {
   position: relative;
   padding: 15px;
+  overflow-y: auto;
+  max-height: 60vh;
+  display: block;
 }
 .pp_upload .modal-footer {
   padding: 15px;
