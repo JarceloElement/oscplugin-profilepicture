@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-16 10:45+0200\n"
+"POT-Creation-Date: 2019-09-01 17:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,12 +75,12 @@ msgstr ""
 msgid "Default profile picture"
 msgstr ""
 
-#: views/admin/settings.php:35
+#: views/admin/settings.php:34
 msgid "Current picture"
 msgstr ""
 
-#: views/admin/settings.php:42 views/web/user-dashboard.php:23
-#: views/web/user-register.php:17
+#: views/admin/settings.php:42 views/web/user-dashboard.php:29
+#: views/web/user-register.php:23
 msgid "Choose a profile picture"
 msgstr ""
 
@@ -124,10 +124,14 @@ msgstr ""
 msgid "Current profile picture"
 msgstr ""
 
-#: views/web/user-dashboard.php:16
+#: views/web/user-dashboard.php:16 views/web/user-register.php:10
+msgid "Profile picture preview"
+msgstr ""
+
+#: views/web/user-dashboard.php:22
 msgid "Add a new profile picture"
 msgstr ""
 
-#: views/web/user-register.php:10
+#: views/web/user-register.php:16
 msgid "Profile picture"
 msgstr ""

@@ -10,7 +10,7 @@
 Plugin Name: Profile Picture Lite
 Plugin URI: https://www.zagorski-oglasnik.com/
 Description: Users can add profile pictures. As a bonus they can crop, rotate, flip, resize and reposition them.
-Version: 1.0.0
+Version: 1.0.3
 Author: WEBmods by Zagorski Oglasnik jdoo
 Author URI: https://www.zagorski-oglasnik.com/
 Plugin update URI: profile-picture-lite
@@ -23,7 +23,6 @@ require_once PROFILEPIC_PATH.'oc-load.php';
 
 function profilepic_install() {
     ProfilePicModel::newInstance()->install();
-    osc_set_preference('version', PROFILEPIC_VERSION, 'plugin_profilepic');
     osc_set_preference('original_size', '192', 'plugin_profilepic');
     osc_set_preference('quality', '80', 'plugin_profilepic');
     osc_set_preference('default_picture', 'default.jpg', 'plugin_profilepic');

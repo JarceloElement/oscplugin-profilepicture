@@ -4,6 +4,8 @@ window.addEventListener('DOMContentLoaded', function() {
     var $image = document.querySelector($wrapper + '.pp_modal_image');
     var $input = document.querySelector($wrapper + '.pp_input');
     var $actions = document.querySelector($wrapper + '.pp_modal_image_edit');
+    var $newImageContainer = $('.pp_new');
+    var $newImage = $('.pp_new img');
     var $btnCrop = $($wrapper + '.pp_crop');
     var $hidden =  $($wrapper + '.pp_data');
     var $modal = $($wrapper + '.pp_modal');
@@ -223,6 +225,8 @@ window.addEventListener('DOMContentLoaded', function() {
             });
             dataURL = canvas.toDataURL();
             $hidden.val(dataURL).trigger('change');
+            $newImageContainer.css('display', 'block');
+            $newImage.attr('src', dataURL);
         }
 
         $modal.modal('hide');

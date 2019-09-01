@@ -12,6 +12,12 @@
         <img src="<?php echo profilepic_get_pic(); ?>" style="max-width: 100px;">
     </div>
 </div>
+<div class="control-group pp_new" style="display: none;">
+    <label class="control-label"><?php _e('Profile picture preview', profilepic_plugin()); ?></label>
+    <div class="controls">
+        <img src="<?php echo profilepic_get_pic(); ?>" style="max-width: 100px;">
+    </div>
+</div>
 <div class="control-group pp_upload">
     <label class="control-label"><?php _e('Add a new profile picture', profilepic_plugin()); ?></label>
     <div class="controls">
