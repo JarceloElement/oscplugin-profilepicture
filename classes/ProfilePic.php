@@ -82,10 +82,10 @@ class ProfilePic {
     function includes() {
         // Add frontend and backend JS and CSS.
         if(OC_ADMIN || (Params::getParam('action') == 'register' || Params::getParam('action') == 'profile')) {
-            osc_enqueue_style('profilepic', profilepic_asset_url('assets/web/main.min.css?v=1012'));
+            osc_enqueue_style('profilepic', profilepic_asset_url('assets/web/main.min.css'));
             osc_enqueue_style('custombox', profilepic_asset_url('assets/web/custombox.min.css'));
             osc_enqueue_style('cropper', profilepic_asset_url('assets/web/cropper.min.css'));
-            osc_register_script('profilepic', profilepic_asset_url('assets/web/main.min.js?v=1004'));
+            osc_register_script('profilepic', profilepic_asset_url('assets/web/main.min.js'));
             osc_register_script('custombox', profilepic_asset_url('assets/web/custombox.min.js'));
             osc_register_script('custombox-legacy', profilepic_asset_url('assets/web/custombox.min.js'));
             osc_register_script('cropper', profilepic_asset_url('assets/web/cropper.min.js'));

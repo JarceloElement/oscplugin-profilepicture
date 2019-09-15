@@ -1,18 +1,14 @@
 .pp_upload .label {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .pp_upload .progress {
-  display: none;
-  margin-bottom: 1rem;
+    display: none;
+    margin-bottom: 1rem;
 }
 
 .pp_upload .alert {
-  display: none;
-}
-
-.pp_upload .img-pp_modal img {
-  max-width: 100%;
+    display: none;
 }
 
 .pp_input {
@@ -81,6 +77,10 @@
 .pp_modal_header h2 {
     display: flex;
     justify-content: space-between;
+}
+
+.pp_modal_body img {
+  max-width: 100%;
 }
 
 .pp_modal_footer {
