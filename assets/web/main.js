@@ -3,6 +3,11 @@ $(function() {
     var $modalContainer = '.pp_modal';
     var $image = document.querySelector($wrapper + ' .pp_modal_image');
     var $input = document.querySelector($wrapper + ' .pp_input');
+
+    if($input === null) {
+        return;
+    }
+
     var $actions = document.querySelector($wrapper + ' .pp_modal_image_edit');
     var $newImageContainer = document.querySelector('.pp_new');
     var $newImage = $('.pp_new img');
