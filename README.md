@@ -1,6 +1,6 @@
 # Osclass Profile Picture plugin
 
-![Profile Picture Cover Image](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/cover.jpg)
+![Profile Picture Cover Image](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/screenshots/cover.jpg)
 
 ### OVERVIEW
 With this plugin, your users can add profile pictures either on registration or their dashboard.
@@ -21,7 +21,7 @@ Check the help page for documentation on helpers (for showing profile picture).
 .pot translation template is provided. Translate using POedit or similar software.
 
 ### SCREENSHOTS
-![Register Page](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/register%20page.jpg)
-![Dashboard Page](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/dashboard%20page.jpg)
-![Cropper](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/cropper.jpg)
-![Admin settings](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/admin%20page.jpg)
+![Register Page](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/screenshots/register%20page.jpg)
+![Dashboard Page](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/screenshots/dashboard%20page.jpg)
+![Cropper](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/screenshots/cropper.jpg)
+![Admin settings](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/screenshots/admin%20page.jpg)
