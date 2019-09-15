@@ -21,6 +21,7 @@ Check the help page for documentation on helpers (for showing profile picture).
 .pot translation template is provided. Translate using POedit or similar software.
 
 ### CHANGELOG
+- [1.1.0] 15/09/2019 - Custombox instead of Bootstrap modal, update fixes, new colors because why not.
 - [1.1.0 beta 1] 15/09/2019 - Added update support, changed directory structure.
 - [1.0.4] 01/09/2019 - Added profile picture preview after crop, thanks @joecool.
 - [1.0.3] 01/09/2019 - Modal fixed to show better on smaller screens, thanks @joecool.
