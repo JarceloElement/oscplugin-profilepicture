@@ -50,6 +50,7 @@ function profilepic_check_update() {
 
 function profilepic_update($current_version) {
     osc_set_preference('version', PROFILEPIC_VERSION, 'plugin_profilepic');
+    osc_set_preference('marketAllowExternalSources', '1', 'osclass', 'BOOLEAN');
 }
 
 profilepic_check_update();
