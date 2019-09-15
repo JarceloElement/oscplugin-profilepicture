@@ -82,14 +82,16 @@ class ProfilePic {
     function includes() {
         // Add frontend and backend JS and CSS.
         if(OC_ADMIN || (Params::getParam('action') == 'register' || Params::getParam('action') == 'profile')) {
-            osc_enqueue_style('profilepic-main', osc_plugin_url('zo_profilepic/assets/web/main.css').'main.css');
-            osc_enqueue_style('profilepic-modal', osc_plugin_url('zo_profilepic/assets/web/modal.css').'modal.css');
-            osc_enqueue_style('cropper', osc_plugin_url('zo_profilepic/assets/web/cropper.min.css').'cropper.min.css');
-            osc_register_script('profilepic-main', osc_plugin_url('zo_profilepic/assets/web/main.js').'main.js');
-            osc_register_script('profilepic-modal', osc_plugin_url('zo_profilepic/assets/web/modal.js').'modal.js');
-            osc_register_script('cropper', osc_plugin_url('zo_profilepic/assets/web/cropper.min.js').'cropper.min.js');
-            osc_enqueue_script('profilepic-main');
-            osc_enqueue_script('profilepic-modal');
+            osc_enqueue_style('profilepic', profilepic_asset_url('assets/web/main.min.css?v=1012'));
+            osc_enqueue_style('custombox', profilepic_asset_url('assets/web/custombox.min.css'));
+            osc_enqueue_style('cropper', profilepic_asset_url('assets/web/cropper.min.css'));
+            osc_register_script('profilepic', profilepic_asset_url('assets/web/main.min.js?v=1004'));
+            osc_register_script('custombox', profilepic_asset_url('assets/web/custombox.min.js'));
+            osc_register_script('custombox-legacy', profilepic_asset_url('assets/web/custombox.min.js'));
+            osc_register_script('cropper', profilepic_asset_url('assets/web/cropper.min.js'));
+            osc_enqueue_script('profilepic');
+            osc_enqueue_script('custombox');
+            osc_enqueue_script('custombox-legacy');
             osc_enqueue_script('cropper');
         }
     }
@@ -99,9 +101,9 @@ class ProfilePic {
             // Add frontend and backend JS language vars.
             ?>
             <script>
-            var $profilepicture_uploaded = '<?php _e('Picture uploaded. Click to upload a new one.', profilepic_plugin()); ?>';
-            var $profilepicture_not_uploaded = '<?php _e('Choose a profile picture.', profilepic_plugin()); ?>';
-            var $profilepicture_size = '<?php echo profilepic_pref('original_size'); ?>';
+            var $profilepic_uploaded = '<?php _e('Picture uploaded. Click to upload a new one.', profilepic_plugin()); ?>';
+            var $profilepic_not_uploaded = '<?php _e('Choose a profile picture.', profilepic_plugin()); ?>';
+            var $profilepic_size = '<?php echo profilepic_pref('original_size'); ?>';
             </script>
             <?php
             include(PROFILEPIC_PATH.'views/web/modal.php');

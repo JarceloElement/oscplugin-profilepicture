@@ -1,14 +1,13 @@
-// Mix of jQuery and native Javascript - CropperJS is a Javascript library, but jQuery is needed in some cases.
-window.addEventListener('DOMContentLoaded', function() {
-    var $wrapper = '.pp_upload ';
-    var $image = document.querySelector($wrapper + '.pp_modal_image');
-    var $input = document.querySelector($wrapper + '.pp_input');
-    var $actions = document.querySelector($wrapper + '.pp_modal_image_edit');
-    var $newImageContainer = $('.pp_new');
+$(function() {
+    var $wrapper = '.pp_upload';
+    var $modalContainer = '.pp_modal';
+    var $image = document.querySelector($wrapper + ' .pp_modal_image');
+    var $input = document.querySelector($wrapper + ' .pp_input');
+    var $actions = document.querySelector($wrapper + ' .pp_modal_image_edit');
+    var $newImageContainer = document.querySelector('.pp_new');
     var $newImage = $('.pp_new img');
-    var $btnCrop = $($wrapper + '.pp_crop');
-    var $hidden =  $($wrapper + '.pp_data');
-    var $modal = $($wrapper + '.pp_modal');
+    var $btnCrop = $($wrapper + ' .pp_crop');
+    var $hidden =  $($wrapper + ' .pp_data');
     var $options = {
         aspectRatio: 1,
         viewMode: 0,
@@ -16,14 +15,19 @@ window.addEventListener('DOMContentLoaded', function() {
     };
     var $cropper;
 
-    $($wrapper + '[data-toggle="tooltip"]').tooltip();
+    var $modal = new Custombox.modal({
+        content: {
+            effect: 'fadein',
+            target: $modalContainer
+        }
+    });
 
     $input.addEventListener('change', function(e) {
         var files = e.target.files;
         var done = function(url) {
             $input.value = '';
             $image.src = url;
-            $modal.modal('show');
+            $modal.open();
         };
         var reader;
         var file;
@@ -31,7 +35,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
         if (files && files.length > 0) {
             file = files[0];
-
             if (URL) {
                 done(URL.createObjectURL(file));
             } else if (FileReader) {
@@ -44,57 +47,20 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    $modal.on('shown.bs.modal', function() {
+    document.addEventListener('custombox:content:open', function() {
+        document.querySelector($modalContainer).style.display = 'block';
         $cropper = new Cropper($image, $options);
-    }).on('hidden.bs.modal', function() {
+    });
+
+    document.addEventListener('custombox:overlay:close', function() {
+        document.querySelector($modalContainer).style.display = 'none';
         $cropper.destroy();
         $cropper = null;
     });
 
-    $actions.onchange = function(event) {
-        var e = event || window.event;
-        var target = e.target || e.srcElement;
-        var cropBoxData;
-        var canvasData;
-        var isCheckbox;
-        var isRadio;
-        if (!$cropper) {
-            return;
-        }
-
-        if (target.tagName.toLowerCase() === 'label') {
-            target = target.querySelector('input');
-        }
-
-        isCheckbox = target.type === 'checkbox';
-        isRadio = target.type === 'radio';
-
-        if (isCheckbox || isRadio) {
-            if (isCheckbox) {
-                $options[target.name] = target.checked;
-                cropBoxData = $cropper.getCropBoxData();
-                canvasData = $cropper.getCanvasData();
-
-                $options.ready = function() {
-                    console.log('ready');
-                    $cropper.setCropBoxData(cropBoxData).setCanvasData(canvasData);
-                };
-            } else {
-                $options[target.name] = target.value;
-                $options.ready = function() {
-                    console.log('ready');
-                };
-            }
-
-            // Restart
-            $cropper.destroy();
-            $cropper = new Cropper($image, $options);
-        }
-    };
-
     $actions.onclick = function(event) {
         var e = event || window.event;
-        var target = e.target || e.srcElement;
+        var target = e.target || e.srcElement; console.info(target);
         var cropped;
         var result;
         var $input;
@@ -143,9 +109,7 @@ window.addEventListener('DOMContentLoaded', function() {
                     if (cropped && $options.viewMode > 0) {
                         $cropper.clear();
                     }
-
-                    break;
-
+                break;
                 case 'getCroppedCanvas':
                     try {
                         data.option = JSON.parse(data.option);
@@ -160,10 +124,8 @@ window.addEventListener('DOMContentLoaded', function() {
 
                         data.option.fillColor = '#fff';
                     }
-
-                    break;
+                break;
             }
-
             result = $cropper[data.method](data.option, data.secondOption);
 
             switch (data.method) {
@@ -171,37 +133,27 @@ window.addEventListener('DOMContentLoaded', function() {
                     if (cropped && $options.viewMode > 0) {
                         $cropper.crop();
                     }
-
-                    break;
-
+                break;
                 case 'scaleX':
                 case 'scaleY':
                     target.setAttribute('data-option', -data.option);
-                    break;
-
+                break;
                 case 'getCroppedCanvas':
                     if (result) {
-                        // Bootstrap's Modal
-                        $('#getCroppedCanvasModal').modal().find('.modal-body').html(result);
-
                         if (!download.disabled) {
                             download.download = uploadedImageName;
                             download.href = result.toDataURL(uploadedImageType);
                         }
                     }
-
-                    break;
-
+                break;
                 case 'destroy':
                     $cropper = null;
-
                     if (uploadedImageURL) {
                         URL.revokeObjectURL(uploadedImageURL);
                         uploadedImageURL = '';
                         $image.src = originalImageURL;
                     }
-
-                    break;
+                break;
             }
 
             if (typeof result === 'object' && result !== $cropper && $input) {
@@ -220,27 +172,27 @@ window.addEventListener('DOMContentLoaded', function() {
 
         if ($cropper) {
             canvas = $cropper.getCroppedCanvas({
-                width: $profilepicture_size,
-                height: $profilepicture_size,
+                width: $profilepic_size,
+                height: $profilepic_size,
             });
             dataURL = canvas.toDataURL();
             $hidden.val(dataURL).trigger('change');
-            $newImageContainer.css('display', 'block');
+            $newImageContainer.style.display = 'block';
             $newImage.attr('src', dataURL);
         }
 
-        $modal.modal('hide');
+        Custombox.modal.closeAll();
     });
 
     $('.pp_file_input').on('change', function() {
-        // Firefox bug fix
         $(this).on( 'focus', function(){ $(this).addClass( 'has-focus' ); }).on( 'blur', function(){ $(this).removeClass( 'has-focus' ); });
     });
 
     $hidden.on('change', function() {
-        if($(this).val())
-            $('label[for=pp_input_]').find('span').html($profilepicture_uploaded);
-        else
-            $('label[for=pp_input_]').find('span').html($profilepicture_not_uploaded);
+        if($(this).val()) {
+            $('label[for=pp_input_]').find('span').html($profilepic_uploaded);
+        } else {
+            $('label[for=pp_input_]').find('span').html($profilepic_not_uploaded);
+        }
     });
 });

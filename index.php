@@ -43,7 +43,7 @@ function profilepic_check_update() {
         if(!$current_version || version_compare(PROFILEPIC_VERSION, $current_version)) {
             profilepic_update($current_version);
         }
-        
+
         unlink(PROFILEPIC_PATH.'needs_update.php');
     }
 }

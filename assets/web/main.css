@@ -11,7 +11,7 @@
   display: none;
 }
 
-.pp_upload .img-container img {
+.pp_upload .img-pp_modal img {
   max-width: 100%;
 }
 
@@ -32,13 +32,13 @@
     overflow: hidden;
     padding: 5px 15px;
     color: #fff;
-    background-color: #d3394c;
+    background-color: #5f27cd;
 }
 
 .pp_input:focus + label,
 .pp_input.has-focus + label,
 .pp_input + label:hover {
-    background-color: #722040;
+    background-color: #341f97;
 }
 
 .pp_input + label svg {
@@ -57,11 +57,32 @@
     display: inline-block;
     overflow: hidden;
     padding: 0.625rem 1.25rem;
+    margin: .25rem .5rem;
     color: #fff;
-    background-color: #d3394c;
+    background-color: #5f27cd;
+}
+
+.pp_button_group {
+    display: flex;
+    justify-content: center;
 }
 
 .pp_button:focus + label,
 .pp_button:hover {
-    background-color: #722040;
+    background-color: #341f97;
+}
+
+.pp_modal {
+    background: #fff;
+    border: 1px solid #c5c5c5;
+    padding: 2rem;
+}
+
+.pp_modal_header h2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pp_modal_footer {
+    margin-top: 2rem;
 }

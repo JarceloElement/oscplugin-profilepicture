@@ -13,6 +13,11 @@ function profilepic_plugin() {
     return 'zo_profilepic';
 }
 
+/* Get asset URL. */
+function profilepic_asset_url($file = '') {
+    return osc_base_url().'oc-content/plugins/'.profilepic_plugin().'/'.$file;
+}
+
 /* Get preference. */
 function profilepic_pref($pref, $trim = 0) {
     if($trim)
