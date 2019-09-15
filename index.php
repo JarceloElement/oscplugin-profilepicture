@@ -38,12 +38,19 @@ function profilepic_uninstall() {
 osc_add_hook(osc_plugin_path(__FILE__) . '_uninstall', 'profilepic_uninstall');
 
 function profilepic_check_update() {
-    $current_version = osc_get_preference('version', 'plugin_profilepic');
-    if(!$current_version || version_compare(PROFILEPIC_VERSION, $current_version)) {
+    // $current_version = osc_get_preference('version', 'plugin_profilepic');
+    // if(!$current_version || version_compare(PROFILEPIC_VERSION, $current_version)) {
+    //     profilepic_update($current_version);
+    // }
+
+    if(file_exists(PROFILEPIC_PATH.'needs_update.php')) {
         profilepic_update($current_version);
+        unlink(PROFILEPIC_PATH.'needs_update.php');
     }
 }
 
 function profilepic_update($current_version) {
     osc_set_preference('version', PROFILEPIC_VERSION, 'plugin_profilepic');
 }
+
+profilepic_check_update();
