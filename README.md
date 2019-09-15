@@ -20,6 +20,12 @@ Check the help page for documentation on helpers (for showing profile picture).
 ### TRANSLATION
 .pot translation template is provided. Translate using POedit or similar software.
 
+### CHANGELOG
+- [1.1.0 beta 1] 15/09/2019 - Added update support, changed directory structure.
+- [1.0.4] 01/09/2019 - Added profile picture preview after crop, thanks @joecool.
+- [1.0.3] 01/09/2019 - Modal fixed to show better on smaller screens, thanks @joecool.
+- [1.0.1] 27/08/2019 - Admin configuration bug fixed.
+
 ### SCREENSHOTS
 ![Register Page](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/screenshots/register%20page.jpg)
 ![Dashboard Page](https://raw.githubusercontent.com/webmods-croatia/oscplugin-profilepicture/master/screenshots/dashboard%20page.jpg)
