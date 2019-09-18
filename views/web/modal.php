@@ -11,7 +11,7 @@
         <div class="pp_modal_header">
             <h2>
                 <?php _e('Edit the profile picture', profilepic_plugin()); ?>
-                <a href="javascript:Custombox.modal.closeAll();" class="pp_modal_close"><span aria-label="<?php _e('Close', profilepic_plugin()); ?>">&times;</span></a>
+                <a href="javascript:Custombox.modal.close();" class="pp_modal_close"><span aria-label="<?php _e('Close', profilepic_plugin()); ?>">&times;</span></a>
             </h2>
         </div>
         <div class="pp_modal_body">
@@ -33,7 +33,7 @@
                 </a>
             </div>
             <div class="pp_button_group">
-                <a class="pp_button" data-dismiss="modal"><?php _e('Cancel', profilepic_plugin()); ?></a>
+                <a class="pp_button" href="javascript:Custombox.modal.close();"><?php _e('Cancel', profilepic_plugin()); ?></a>
                 <a class="pp_button pp_crop"><?php _e('Crop', profilepic_plugin()); ?></a>
             </div>
         </div>
