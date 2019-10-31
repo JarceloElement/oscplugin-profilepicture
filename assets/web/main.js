@@ -15,7 +15,7 @@ $(function() {
     var $hidden =  $($wrapper + ' .pp_data');
     var $options = {
         aspectRatio: 1,
-        viewMode: 0,
+        viewMode: 1,
         dragMode: 'move',
     };
     var $cropper;

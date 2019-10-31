@@ -70,8 +70,14 @@
 
 .pp_modal {
     background: #fff;
-    border: 1px solid #c5c5c5;
-    padding: 2rem;
+    border: medium none;
+    padding: 15px;
+    width: 35%;
+}
+
+.pp_modal_body {
+    height: 250px;
+    overflow: hidden;
 }
 
 .pp_modal_header h2 {
@@ -85,4 +91,22 @@
 
 .pp_modal_footer {
     margin-top: 2rem;
+}
+
+@media all and (max-width: 1200px) {
+    .pp_modal {
+      width: 50%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .pp_modal {
+      width: 75%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .pp_modal {
+      width: 90%;
+    }
 }
