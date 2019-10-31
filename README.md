@@ -21,6 +21,7 @@ Check the help page for documentation on helpers (for showing profile picture).
 .pot translation template is provided. Translate using POedit or similar software.
 
 ### CHANGELOG
+- [1.1.1] 31/10/2019 - UI/UX fixes, thanks @subzero.
 - [1.1.0] 17/09/2019 - JS fixes. Final 1.1.0 release.
 - [1.1.0 beta 2] 15/09/2019 - Custombox instead of Bootstrap modal, update fixes, new colors because why not.
 - [1.1.0 beta 1] 15/09/2019 - Added update support, changed directory structure.
