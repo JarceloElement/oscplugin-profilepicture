@@ -141,7 +141,7 @@ class ProfilePicAdmin {
         osc_register_script('bootstrap.bundle', osc_plugin_url('zo_profilepic/assets/admin/js/plugins/bootstrap/js/bootstrap.bundle.min.js') . 'bootstrap.bundle.min.js', array('jquery'));
         osc_enqueue_script('bootstrap.bundle');
 
-        osc_enqueue_style('adminlte.min', osc_plugin_url('zo_profilepic/assets/admin/css/adminlte.css') . 'adminlte.css');
+        osc_enqueue_style('adminlte.min', osc_plugin_url('zo_profilepic/assets/admin/css/adminlte.min.css') . 'adminlte.min.css');
         osc_enqueue_style('fontawesome', osc_plugin_url('zo_profilepic/assets/admin/css/fa.css') . 'fa.css');
         osc_enqueue_style('profilepic-admin', osc_plugin_url('zo_profilepic/assets/admin/main.css') . 'main.css');
     }
