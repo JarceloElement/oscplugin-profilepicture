@@ -18,7 +18,7 @@ Plugin update URI: http://loveosclass.com/update/profilepiclite/free
 
 define('PROFILEPIC_PATH', dirname(__FILE__) . '/' );
 define('PROFILEPIC_FOLDER', osc_plugin_folder(__FILE__) . '/' );
-define('PROFILEPIC_VERSION', 1100);
+define('PROFILEPIC_VERSION', 1110);
 
 require_once PROFILEPIC_PATH.'oc-load.php';
 
